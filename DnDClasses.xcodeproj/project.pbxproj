@@ -22,6 +22,9 @@
 		2E050C072917448D004CE3A5 /* ClassListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C062917448D004CE3A5 /* ClassListRow.swift */; };
 		2E050C0C291746BA004CE3A5 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C0B291746BA004CE3A5 /* ErrorMessage.swift */; };
 		2E050C0E2917480E004CE3A5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C0D2917480E004CE3A5 /* APIError.swift */; };
+		2E050C12291798F7004CE3A5 /* ClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C0F291798F7004CE3A5 /* ClassListView.swift */; };
+		2E050C13291798F7004CE3A5 /* ClassListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C10291798F7004CE3A5 /* ClassListRow.swift */; };
+		2E050C14291798F7004CE3A5 /* ClassListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C11291798F7004CE3A5 /* ClassListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		2E050C062917448D004CE3A5 /* ClassListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListRow.swift; sourceTree = "<group>"; };
 		2E050C0B291746BA004CE3A5 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		2E050C0D2917480E004CE3A5 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		2E050C0F291798F7004CE3A5 /* ClassListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassListView.swift; path = DnDClasses/Views/ClassList/ClassListView.swift; sourceTree = SOURCE_ROOT; };
+		2E050C10291798F7004CE3A5 /* ClassListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassListRow.swift; path = DnDClasses/Views/ClassList/ClassListRow.swift; sourceTree = SOURCE_ROOT; };
+		2E050C11291798F7004CE3A5 /* ClassListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassListViewModel.swift; path = DnDClasses/Views/ClassList/ClassListViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,19 +173,22 @@
 		2E050C0029174174004CE3A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2E050C0129174179004CE3A5 /* ClassListView */,
+				2E050C0129174179004CE3A5 /* ClassList */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		2E050C0129174179004CE3A5 /* ClassListView */ = {
+		2E050C0129174179004CE3A5 /* ClassList */ = {
 			isa = PBXGroup;
 			children = (
+				2E050C10291798F7004CE3A5 /* ClassListRow.swift */,
+				2E050C0F291798F7004CE3A5 /* ClassListView.swift */,
+				2E050C11291798F7004CE3A5 /* ClassListViewModel.swift */,
 				2E050BCE2914FE1F004CE3A5 /* ClassListView.swift */,
 				2E050C022917418D004CE3A5 /* ClassListViewModel.swift */,
 				2E050C062917448D004CE3A5 /* ClassListRow.swift */,
 			);
-			path = ClassListView;
+			path = ClassList;
 			sourceTree = "<group>";
 		};
 		2E050C0829174675004CE3A5 /* Utilities */ = {
@@ -324,11 +333,14 @@
 				2E050BCF2914FE1F004CE3A5 /* ClassListView.swift in Sources */,
 				2E050BF829150269004CE3A5 /* Endpoint.swift in Sources */,
 				2E050BFF2917381B004CE3A5 /* Classes.swift in Sources */,
+				2E050C13291798F7004CE3A5 /* ClassListRow.swift in Sources */,
 				2E050C0E2917480E004CE3A5 /* APIError.swift in Sources */,
 				2E050BFC291502D7004CE3A5 /* DnDEndpoint.swift in Sources */,
+				2E050C12291798F7004CE3A5 /* ClassListView.swift in Sources */,
 				2E050C0C291746BA004CE3A5 /* ErrorMessage.swift in Sources */,
 				2E050BFA291502A4004CE3A5 /* NetworkEngine.swift in Sources */,
 				2E050C032917418D004CE3A5 /* ClassListViewModel.swift in Sources */,
+				2E050C14291798F7004CE3A5 /* ClassListViewModel.swift in Sources */,
 				2E050BCD2914FE1F004CE3A5 /* DnDClassesApp.swift in Sources */,
 				2E050C072917448D004CE3A5 /* ClassListRow.swift in Sources */,
 			);
