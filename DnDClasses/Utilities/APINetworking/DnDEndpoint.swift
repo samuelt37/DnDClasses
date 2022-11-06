@@ -9,6 +9,7 @@ import Foundation
 
 enum DnDEndpoint : Endpoint {
     case getClasses
+    case getClassSpells(dndClass: String)
     
     var scheme: String {
         switch self {
@@ -28,6 +29,8 @@ enum DnDEndpoint : Endpoint {
         switch self {
         case .getClasses:
             return "/api/classes"
+        case .getClassSpells(let dndClass):
+            return "/api/classes/\(dndClass)/spells"
         }
     }
     
@@ -35,9 +38,6 @@ enum DnDEndpoint : Endpoint {
         switch self {
         default:
             return []
-//        case .search(let searchText):
-//            return [URLQueryItem(name:"searchText", value: searchText),
-//                    URLQueryItem(name:"api_key", value: apiKey)]
         }
     }
     

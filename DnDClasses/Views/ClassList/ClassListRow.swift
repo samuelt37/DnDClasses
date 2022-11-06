@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ClassListRow: View {
-    let dndClass: DnDClass
+    let dndClass: String
     
     var body: some View {
-        Text(dndClass.name)
+        Text(dndClass)
     }
 }
 

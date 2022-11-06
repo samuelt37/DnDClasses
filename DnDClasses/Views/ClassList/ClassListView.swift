@@ -14,7 +14,11 @@ struct ClassListView: View {
         ZStack {
             NavigationView{
                 List(viewModel.classList, id: \.index) { dndclass in
-                    ClassListRow(dndClass: dndclass)
+                    NavigationLink {
+                        ClassDetailView(dndClass: dndclass)
+                    } label: {
+                        ClassListRow(dndClass: dndclass.name)
+                    }
                 }
                 .navigationTitle("Classes")
             }.task {

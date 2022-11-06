@@ -22,6 +22,10 @@
 		2E050C072917448D004CE3A5 /* ClassListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C062917448D004CE3A5 /* ClassListRow.swift */; };
 		2E050C0C291746BA004CE3A5 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C0B291746BA004CE3A5 /* ErrorMessage.swift */; };
 		2E050C0E2917480E004CE3A5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C0D2917480E004CE3A5 /* APIError.swift */; };
+		2E050C1A29179C99004CE3A5 /* ClassDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C1929179C99004CE3A5 /* ClassDetailView.swift */; };
+		2E050C1C29186F1C004CE3A5 /* ClassDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C1B29186F1C004CE3A5 /* ClassDetailViewModel.swift */; };
+		2E050C1E291878F9004CE3A5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C1D291878F9004CE3A5 /* BaseViewModel.swift */; };
+		2E050C2029187B0D004CE3A5 /* Spells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C1F29187B0D004CE3A5 /* Spells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		2E050C062917448D004CE3A5 /* ClassListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListRow.swift; sourceTree = "<group>"; };
 		2E050C0B291746BA004CE3A5 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		2E050C0D2917480E004CE3A5 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		2E050C1929179C99004CE3A5 /* ClassDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailView.swift; sourceTree = "<group>"; };
+		2E050C1B29186F1C004CE3A5 /* ClassDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailViewModel.swift; sourceTree = "<group>"; };
+		2E050C1D291878F9004CE3A5 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		2E050C1F29187B0D004CE3A5 /* Spells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				2E050BFE2917381B004CE3A5 /* Classes.swift */,
+				2E050C1F29187B0D004CE3A5 /* Spells.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				2E050C0129174179004CE3A5 /* ClassList */,
+				2E050C1829179C7F004CE3A5 /* ClassDetail */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,8 +197,18 @@
 			children = (
 				2E050BF629150257004CE3A5 /* APINetworking */,
 				2E050C0B291746BA004CE3A5 /* ErrorMessage.swift */,
+				2E050C1D291878F9004CE3A5 /* BaseViewModel.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2E050C1829179C7F004CE3A5 /* ClassDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2E050C1929179C99004CE3A5 /* ClassDetailView.swift */,
+				2E050C1B29186F1C004CE3A5 /* ClassDetailViewModel.swift */,
+			);
+			path = ClassDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,9 +347,13 @@
 				2E050C0E2917480E004CE3A5 /* APIError.swift in Sources */,
 				2E050BFC291502D7004CE3A5 /* DnDEndpoint.swift in Sources */,
 				2E050C0C291746BA004CE3A5 /* ErrorMessage.swift in Sources */,
+				2E050C2029187B0D004CE3A5 /* Spells.swift in Sources */,
+				2E050C1A29179C99004CE3A5 /* ClassDetailView.swift in Sources */,
+				2E050C1E291878F9004CE3A5 /* BaseViewModel.swift in Sources */,
 				2E050BFA291502A4004CE3A5 /* NetworkEngine.swift in Sources */,
 				2E050C032917418D004CE3A5 /* ClassListViewModel.swift in Sources */,
 				2E050BCD2914FE1F004CE3A5 /* DnDClassesApp.swift in Sources */,
+				2E050C1C29186F1C004CE3A5 /* ClassDetailViewModel.swift in Sources */,
 				2E050C072917448D004CE3A5 /* ClassListRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
