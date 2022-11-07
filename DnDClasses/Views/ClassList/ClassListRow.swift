@@ -15,8 +15,8 @@ struct ClassListRow: View {
     }
 }
 
-//struct ClassListRow_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ClassListRow(dndClass: <#DnDClass#>)
-//    }
-//}
+struct ClassListRow_Previews: PreviewProvider {
+    static var previews: some View {
+        ClassListRow(dndClass: "")
+    }
+}

@@ -17,12 +17,16 @@ struct ClassDetailView: View {
     var body: some View {
         ZStack {
             List(viewModel.spells, id: \.index) { spell in
-//                Text("\(spell.name)")
-//               ClassDetailRow(spell: spell)
+                ClassDetailRow(spellName: spell.name, spellDesc: spell.desc)
             }.task {
                 viewModel.getSpells()
             }.alert(item: $viewModel.errorMessage) { errorMessage in
                 Alert(title: errorMessage.title, message: errorMessage.message, dismissButton: errorMessage.dismissButton)
+            }
+            
+            if viewModel.isLoading {
+                ProgressView()
+                    .scaleEffect(2)
             }
         }
         .navigationTitle("\(viewModel.dndClass.name) Spells")
@@ -31,6 +35,6 @@ struct ClassDetailView: View {
 
 //struct ClassDetailView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ClassDetailView()
+//        ClassDetailView(dndClass: <#DnDClass#>)
 //    }
 //}

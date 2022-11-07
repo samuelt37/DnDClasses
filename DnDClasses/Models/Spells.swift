@@ -17,3 +17,9 @@ struct Spell: Codable {
     var name: String
     var url: String
 }
+
+struct SpellDescription: Codable {
+    var index: String
+    var name: String
+    var desc: [String]
+}

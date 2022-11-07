@@ -26,6 +26,11 @@ struct ClassListView: View {
             }.alert(item: $viewModel.errorMessage) { errorMessage in
                 Alert(title: errorMessage.title, message: errorMessage.message, dismissButton: errorMessage.dismissButton)
             }
+            
+            if viewModel.isLoading {
+                ProgressView()
+                    .scaleEffect(2)
+            }
         }
     }
 }

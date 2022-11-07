@@ -26,6 +26,7 @@
 		2E050C1C29186F1C004CE3A5 /* ClassDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C1B29186F1C004CE3A5 /* ClassDetailViewModel.swift */; };
 		2E050C1E291878F9004CE3A5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C1D291878F9004CE3A5 /* BaseViewModel.swift */; };
 		2E050C2029187B0D004CE3A5 /* Spells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C1F29187B0D004CE3A5 /* Spells.swift */; };
+		2E7D094D2918818200A7B6B1 /* ClassDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D094C2918818200A7B6B1 /* ClassDetailRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		2E050C1B29186F1C004CE3A5 /* ClassDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailViewModel.swift; sourceTree = "<group>"; };
 		2E050C1D291878F9004CE3A5 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		2E050C1F29187B0D004CE3A5 /* Spells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spells.swift; sourceTree = "<group>"; };
+		2E7D094C2918818200A7B6B1 /* ClassDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 			children = (
 				2E050C1929179C99004CE3A5 /* ClassDetailView.swift */,
 				2E050C1B29186F1C004CE3A5 /* ClassDetailViewModel.swift */,
+				2E7D094C2918818200A7B6B1 /* ClassDetailRow.swift */,
 			);
 			path = ClassDetail;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				2E050BF829150269004CE3A5 /* Endpoint.swift in Sources */,
 				2E050BFF2917381B004CE3A5 /* Classes.swift in Sources */,
 				2E050C0E2917480E004CE3A5 /* APIError.swift in Sources */,
+				2E7D094D2918818200A7B6B1 /* ClassDetailRow.swift in Sources */,
 				2E050BFC291502D7004CE3A5 /* DnDEndpoint.swift in Sources */,
 				2E050C0C291746BA004CE3A5 /* ErrorMessage.swift in Sources */,
 				2E050C2029187B0D004CE3A5 /* Spells.swift in Sources */,
