@@ -13,7 +13,7 @@ struct ClassDetailRow: View {
     
     var body: some View {
         VStack {
-            Text(spellName)
+            Text(spellName).bold().font(.system(size: 24))
             Text(spellDesc.joined(separator: "\n"))
         }
         
@@ -22,6 +22,6 @@ struct ClassDetailRow: View {
 
 struct ClassDetailRow_Previews: PreviewProvider {
     static var previews: some View {
-        ClassDetailRow(spellName: "", spellDesc: [""])
+        ClassDetailRow(spellName: "world", spellDesc: ["hello"])
     }
 }

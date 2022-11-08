@@ -56,19 +56,6 @@ class ClassDetailViewModel: BaseViewModel {
                         self.spells.append(response)
                     case .failure:
                         break
-//                        switch error {
-//                        case .invalidData:
-//                            self.errorMessage = AlertContext.invalidData
-//
-//                        case .invalidURL:
-//                            self.errorMessage = AlertContext.invalidURL
-//
-//                        case .invalidResponse:
-//                            self.errorMessage = AlertContext.invalidResponse
-//
-//                        case .unableToComplete:
-//                            self.errorMessage = AlertContext.unableToComplete
-//                        }
                     }
                 }
             }
@@ -78,18 +65,5 @@ class ClassDetailViewModel: BaseViewModel {
         group.notify(queue: .main, execute: {
             self.isLoading = false
         })
-        
-        
-        
-        
-        
-        
-        
-        
-//        DispatchQueue.main.async {
-//            self.isLoading = false
-//
-//
-//        }
     }
 }
