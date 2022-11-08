@@ -7,10 +7,8 @@
 
 import Foundation
 
-class ClassListViewModel: ObservableObject {
+class ClassListViewModel: BaseViewModel {
     @Published var classList = [DnDClass]()
-    @Published var isLoading = false
-    @Published var errorMessage: ErrorMessage?
     
     func getClasses() {
         isLoading = true

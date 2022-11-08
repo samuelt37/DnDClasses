@@ -14,13 +14,22 @@ struct ClassListView: View {
         ZStack {
             NavigationView{
                 List(viewModel.classList, id: \.index) { dndclass in
-                    ClassListRow(dndClass: dndclass)
+                    NavigationLink {
+                        ClassDetailView(dndClass: dndclass)
+                    } label: {
+                        ClassListRow(dndClass: dndclass.name)
+                    }
                 }
                 .navigationTitle("Classes")
             }.task {
                 viewModel.getClasses()
             }.alert(item: $viewModel.errorMessage) { errorMessage in
                 Alert(title: errorMessage.title, message: errorMessage.message, dismissButton: errorMessage.dismissButton)
+            }
+            
+            if viewModel.isLoading {
+                ProgressView()
+                    .scaleEffect(2)
             }
         }
     }

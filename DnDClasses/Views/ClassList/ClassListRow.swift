@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ClassListRow: View {
-    let dndClass: DnDClass
+    let dndClass: String
     
     var body: some View {
-        Text(dndClass.name)
+        Text(dndClass)
     }
 }
 
-//struct ClassListRow_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ClassListRow(dndClass: <#DnDClass#>)
-//    }
-//}
+struct ClassListRow_Previews: PreviewProvider {
+    static var previews: some View {
+        ClassListRow(dndClass: "")
+    }
+}
