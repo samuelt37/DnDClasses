@@ -18,7 +18,10 @@ struct ClassDetailView: View {
         ZStack {
             List(viewModel.spells, id: \.index) { spell in
                 ClassDetailRow(spellName: spell.name, spellDesc: spell.desc)
-            }.task {
+            }
+            .emptyListPlaceholder(items: viewModel.spells,
+                                   placeholder: AnyView(ListPlaceholderView(placeholder: "No spells found.")))
+            .task {
                 viewModel.getSpells()
             }.alert(item: $viewModel.errorMessage) { errorMessage in
                 Alert(title: errorMessage.title, message: errorMessage.message, dismissButton: errorMessage.dismissButton)

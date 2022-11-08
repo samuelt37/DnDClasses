@@ -27,6 +27,7 @@
 		2E050C1E291878F9004CE3A5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C1D291878F9004CE3A5 /* BaseViewModel.swift */; };
 		2E050C2029187B0D004CE3A5 /* Spells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E050C1F29187B0D004CE3A5 /* Spells.swift */; };
 		2E7D094D2918818200A7B6B1 /* ClassDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D094C2918818200A7B6B1 /* ClassDetailRow.swift */; };
+		2E7D09532919E92700A7B6B1 /* EmptyListPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D09522919E92700A7B6B1 /* EmptyListPlaceHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		2E050C1D291878F9004CE3A5 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		2E050C1F29187B0D004CE3A5 /* Spells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spells.swift; sourceTree = "<group>"; };
 		2E7D094C2918818200A7B6B1 /* ClassDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailRow.swift; sourceTree = "<group>"; };
+		2E7D09522919E92700A7B6B1 /* EmptyListPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListPlaceHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				2E050BF629150257004CE3A5 /* APINetworking */,
 				2E050C0B291746BA004CE3A5 /* ErrorMessage.swift */,
 				2E050C1D291878F9004CE3A5 /* BaseViewModel.swift */,
+				2E7D09522919E92700A7B6B1 /* EmptyListPlaceHolder.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				2E050BFF2917381B004CE3A5 /* Classes.swift in Sources */,
 				2E050C0E2917480E004CE3A5 /* APIError.swift in Sources */,
 				2E7D094D2918818200A7B6B1 /* ClassDetailRow.swift in Sources */,
+				2E7D09532919E92700A7B6B1 /* EmptyListPlaceHolder.swift in Sources */,
 				2E050BFC291502D7004CE3A5 /* DnDEndpoint.swift in Sources */,
 				2E050C0C291746BA004CE3A5 /* ErrorMessage.swift in Sources */,
 				2E050C2029187B0D004CE3A5 /* Spells.swift in Sources */,
