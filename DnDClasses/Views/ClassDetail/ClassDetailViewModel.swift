@@ -26,7 +26,6 @@ struct getSpellTask {
         
         let (data, _) = try await URLSession.shared.data(from: url)
         if let responseObject = try? JSONDecoder().decode(SpellDescription.self, from:data) {
-            print(responseObject)
             return responseObject
         }
         else {
@@ -50,8 +49,7 @@ class ClassDetailViewModel: BaseViewModel {
             case .success(let response):
                 var tasks = [getSpellTask]()
                 for spell in response.results {
-                    let spellname = spell.name.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
-                    tasks.append(getSpellTask(endpoint: DnDEndpoint.getSpellInfo(spellName: spellname.lowercased())))
+                    tasks.append(getSpellTask(endpoint: DnDEndpoint.getSpellInfo(spellName: spell.index)))
                 }
                 let allTasks = tasks
                 Task {
