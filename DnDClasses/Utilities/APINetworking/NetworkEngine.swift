@@ -8,11 +8,6 @@
 import Foundation
 
 class NetworkEngine {
-    ///Executes the api call, decodes the response into Codable object
-    /// - Paramters:
-    ///     - endpoint: the url
-    ///     - completion: the response
-    
     class func request<T: Codable>(endpoint: Endpoint, completion: @escaping (Result<T,APIError>) -> ()) {
         var components = URLComponents()
         components.scheme = endpoint.scheme

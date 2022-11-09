@@ -22,7 +22,9 @@ struct ClassDetailView: View {
             .emptyListPlaceholder(items: viewModel.spells,
                                    placeholder: AnyView(ListPlaceholderView(placeholder: "No spells found.")))
             .task {
-                viewModel.getSpells()
+                Task {
+                    try await viewModel.getSpells()
+                }
             }.alert(item: $viewModel.errorMessage) { errorMessage in
                 Alert(title: errorMessage.title, message: errorMessage.message, dismissButton: errorMessage.dismissButton)
             }
