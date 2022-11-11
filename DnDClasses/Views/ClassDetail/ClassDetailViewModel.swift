@@ -44,7 +44,7 @@ class ClassDetailViewModel: BaseViewModel {
     
     func getSpells() async throws {
         isLoading = true
-        NetworkEngine.request(endpoint: DnDEndpoint.getClassSpells(dndClass: dndClass.name.lowercased())) { (result: Result<SpellSet, APIError>) in
+        NetworkEngine.request(endpoint: DnDEndpoint.getClassSpells(dndClass: dndClass.index)) { (result: Result<SpellSet, APIError>) in
             switch result {
             case .success(let response):
                 var tasks = [getSpellTask]()
@@ -74,12 +74,16 @@ class ClassDetailViewModel: BaseViewModel {
                             return taskResults.sorted {$0.name < $1.name}
                         })
                         
-                        print(allResults)
-                        self.spells = allResults
-                        self.isLoading = false
+                        DispatchQueue.main.async {
+                            self.spells = allResults
+                            self.isLoading = false
+                        }
                     }
                     catch {
-                        
+                        DispatchQueue.main.async {
+                            self.errorMessage = AlertContext.unableToComplete
+                            self.isLoading = false
+                        }
                     }
                 }
             case .failure(let error):
@@ -100,8 +104,4 @@ class ClassDetailViewModel: BaseViewModel {
             
         }
     }
-    
-    func getSpellDescriptions(spells:[Spell]) async throws {
-    }
-        
 }
